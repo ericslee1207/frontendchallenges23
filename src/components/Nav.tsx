@@ -9,12 +9,14 @@ const Nav = () => {
   return (
     <div
       style={{
-        width: "100%",
         padding: "0 1rem",
-        borderBottom: "1px solid rgba(0, 0, 0, 0.1)",
+        boxShadow: "0.1px 0.1px 10px lightgrey",
         display: "flex",
         alignItems: "center",
-        position: "relative",
+        position: "sticky",
+        top: 0,
+        backgroundColor: "white",
+        zIndex: 99,
       }}
     >
       <h2 style={{ marginLeft: "14%" }}>Penn Course Cart</h2>
@@ -28,6 +30,7 @@ const Nav = () => {
           alignItems: "center",
           backgroundColor: "white",
           border: "0px",
+          cursor: "pointer",
         }}
         onClick={() => navigate("/")}
       >
@@ -43,6 +46,7 @@ const Nav = () => {
           alignItems: "center",
           backgroundColor: "white",
           border: "0px",
+          cursor: "pointer",
         }}
         onClick={() => navigate("cart")}
       >

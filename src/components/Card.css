@@ -1,0 +1,88 @@
+.mainbody {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin-top: 30px;
+  margin: 20px;
+  min-height: 400px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 0.1px 0.1px 10px lightgrey;
+}
+
+.cardtophalf {
+  width: 300px;
+  height: 175px;
+  box-sizing: border-box;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.namecontainer {
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 70px;
+  width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.bottomhalfcard {
+  width: 300px;
+  min-height: 140px;
+  box-sizing: border-box;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 70px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 14px;
+  margin: 5px;
+  margin-left: 0px;
+}
+
+.button {
+  border: 0px;
+  width: 300px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  height: 60px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  box-shadow: 0.1px 0.1px 10px lightgrey;
+  cursor: pointer;
+}
+
+.expandbutton {
+  border-radius: 30px;
+  height: 40px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  bottom: 5px;
+  position: absolute;
+  border: 0px;
+  cursor: pointer;
+}
+
+.cardcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

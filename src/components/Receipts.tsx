@@ -31,7 +31,7 @@ const Receipts = () => {
         <div
           style={{
             flex: 1 / 9,
-            backgroundColor: "lightblue",
+            backgroundColor: "#BEE5DA",
             borderTopLeftRadius: "25px",
             borderTopRightRadius: "25px",
             display: "flex",
@@ -49,6 +49,7 @@ const Receipts = () => {
           <div>
             {courses.map((c) => (
               <div
+                key={c.dept + "-" + c.number}
                 style={{
                   flexDirection: "row",
                   display: "flex",

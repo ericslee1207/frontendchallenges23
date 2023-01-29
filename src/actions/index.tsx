@@ -1,3 +1,10 @@
+export const loadCourse = (course: Object) => {
+  return {
+    type: "LOADCOURSES",
+    loadedCourse: course,
+  };
+};
+
 export const addCourseToCart = (course: any) => {
   return {
     type: "ADDTOCART",

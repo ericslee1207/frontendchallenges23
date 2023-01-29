@@ -6,10 +6,10 @@ import { removeCourseFromCart } from "../actions";
 const Order = (props: any) => {
   const dispatch = useDispatch();
   let prereqs = "None";
-  if (props.order.prereqs != undefined) {
+  if (props.order.prereqs !== undefined) {
     prereqs = "";
     for (let i = 0; i < props.order.prereqs.length; i++) {
-      if (i == props.order.prereqs.length - 1) {
+      if ((i = props.order.prereqs.length - 1)) {
         prereqs += props.order.prereqs[i];
       } else {
         prereqs += props.order.prereqs[i] + ", ";
@@ -17,13 +17,13 @@ const Order = (props: any) => {
     }
   }
   let backgroundColor = "#b7fdda";
-  if ((props.order.number + "")[0] == "1") {
+  if ((props.order.number + "")[0] === "1") {
     backgroundColor = "#b7fdda";
-  } else if ((props.order.number + "")[0] == "1") {
+  } else if ((props.order.number + "")[0] === "1") {
     backgroundColor = "#e6c8fe";
-  } else if ((props.order.number + "")[0] == "2") {
+  } else if ((props.order.number + "")[0] === "2") {
     backgroundColor = "#ffd0bf";
-  } else if ((props.order.number + "")[0] == "3") {
+  } else if ((props.order.number + "")[0] === "3") {
     backgroundColor = "#ffb8d2";
   } else {
     backgroundColor = "#cea4e4";

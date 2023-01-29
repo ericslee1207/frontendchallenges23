@@ -1,0 +1,73 @@
+.cartcontainer {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 2%;
+}
+
+.carthlayout {
+  display: flex;
+  flex-direction: row;
+  flex: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.cartv1layout {
+  display: flex;
+  flex-direction: column;
+  flex: 1.3;
+  height: 550px;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.cartv2layout {
+  display: flex;
+  flex-direction: column;
+  flex: 0.7;
+  align-items: "center";
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.cartcard {
+  box-shadow: 0.1px 0.1px 10px lightgrey;
+  min-height: 300px;
+  width: "90%";
+  border-radius: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.cartbutton {
+  border: 0px;
+  width: 100%;
+  padding: 5px;
+  align-self: center;
+  margin-top: 30px;
+  height: 60px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background-color: lightgreen;
+  box-shadow: 0.1px 0.1px 10px lightgrey;
+  cursor: pointer;
+}
+
+.cartitem {
+  width: 100%;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cartcheckout {
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+  flex-direction: row;
+}
