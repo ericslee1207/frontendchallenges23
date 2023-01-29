@@ -1,0 +1,33 @@
+Hello,
+
+This is my technical challenge for the frontend web development team. 
+
+Here are the basic ideas of my project.
+
+There are three main pages: 
+- Courses.txt
+- Cart.txt
+- Receipt.txt
+
+State management
+    - For state management, I used Redux. I stored the current courses the user added to cart, as well as the details of each course
+      offered in Course.json. To get these details such as difficulty and course quality, I used PennLabs API (retrieve course)
+
+1) Courses.ts displays all the different courses available to students in as provided in the Courses.json file. I custom designed 
+and programmed the visual components. Clicking on the arrow down button allows the user to read the details of the course. 
+    - Search bar
+        - Users can filter courses by description, name, or number
+    - Filter dropdown
+        - Users can filter courses by selecting a range for course numbers. 
+    - Add to cart
+        - Users can add to cart by clicking the add to cart button. 
+        - This updates redux store for user courses in cart.
+
+2) Adding to Cart updates the red notification component (top right) and also updates the cart in Carts.ts.
+    - You can look at the cart by clicking on cart in the top navigation. 
+    - You can review all the added courses
+    - There is a button called "Checkout" which will bring users to a receipt page. 
+    - The information of all the courses checked out is brought to the receipt page using query parameters.
+
+3) The receipts page
+    - The receipts page is simply a visual summary of all the courses checked out. 
